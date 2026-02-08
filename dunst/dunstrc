@@ -1,0 +1,75 @@
+[global]
+    ### DISPLAY ###
+    geometry             = "375x20-28+36"
+    indicate_hidden      = yes
+    shrink               = no
+    notification_height  = 0
+    separator_height     = 2
+    padding              = 12
+    horizontal_padding   = 12
+    
+    frame_width          = 1
+    frame_color          = "#2f343f"
+    separator_color      = frame
+
+    sort                 = yes
+    idle_threshold       = 120
+    
+    ### TEXT ###
+    font                 = Lilex Nerd Font Propo 11, Inter Variable 11
+    line_height          = 0
+    markup               = full
+    format               = "<b>%s · %a </b>\n%b"
+    alignment            = left
+    vertical_alignment   = center
+    show_age_threshold   = 60
+    word_wrap            = yes
+    ellipsize            = middle
+    ignore_newline       = no
+    stack_duplicates     = true
+    hide_duplicate_count = false
+    show_indicators      = yes
+    
+    ### ICONS ###
+    icon_position        = left
+    max_icon_size        = 64
+    
+    ### HISTORY ###
+    sticky_history       = yes
+    history_length       = 50
+    
+    ### INTERACTIONS ###
+    dmenu                = /usr/bin/rofi -show run -p dunst:
+    browser              = /usr/bin/firefox
+    always_run_script    = true
+    title                = Dunst
+    class                = Dunst
+    startup_notification = false
+    verbosity            = mesg
+    mouse_right_click    = close_all
+
+[experimental]
+    per_monitor_dpi      = false
+
+[shortcuts]
+    close                = ctrl+shift+space
+    history              = ctrl+space
+    context              = ctrl+shift+period
+
+### COLORS & URGENCY ###
+
+[urgency_low]
+    background = "#0f1013"
+    foreground = "#676b75"
+    timeout    = 4
+
+[urgency_normal]
+    background = "#0f1013"
+    foreground = "#eac094"
+    timeout    = 4
+
+[urgency_critical]
+    background = "#0f1013"
+    foreground = "#ff6c6b"
+    frame_color= "#ff6c6b"
+    timeout    = 0

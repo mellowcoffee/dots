@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+  
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+  ],
+
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "clock#date",
+    "clock#time"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format-icons": {
+      "active": "●",
+      "default": "●"
+    },
+  },
+
+  "clock#date": {
+    "timezone": "Europe/Budapest",
+    "tooltip": false,
+    "format": "{:%a %d %b}",
+    // "format": "{:%A %Y/%m/%d — %H:%M}",
+    // "format": "{:%A %Y/%m/%d ~ %H.%M}",
+    "interval": 1
+  },
+  "clock#time": {
+    "timezone": "Europe/Budapest",
+    "tooltip": false,
+    "format": "{:%H:%M}",
+    "interval": 1
+  },
+
+  "bluetooth": {
+    "format": "󰂲",
+    "format-on": "{icon}",
+    "format-off": "{icon}", 
+    "format-connected":"{icon}",
+    "format-icons":{
+        "on":"󰂯",
+        "off": "󰂲",
+        "connected": "󰂱",
+    },
+    "on-click": "blueman-manager",
+    "tooltip-format-connected":"{device_enumerate}"
+  },
+
+  "network": {
+    "format-wifi": "", 
+    "format-ethernet": "",
+    "format-linked": "",
+    "format-disconnected": "",
+    // "format-wifi": "󰤢",
+    // "format-ethernet": "󰈀 ",
+    // "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip-format": "{essid} ({signalStrength})",
+    "on-click": "nm-connection-editor"
+  },
+
+  "backlight": {
+    "format": "{icon} {percent}",
+    "format-icons": ["","󰃜", "󰃛", "󰃞","󰃝","󰃟","󰃠"],
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    "interval":2,
+    "states": {
+          "good": 95,
+          "warning": 30,
+          "critical": 15
+    },
+    // "format": "{icon} {capacity}%",
+    "format": "{icon}  {capacity}",
+    "format-charging": " {capacity}",
+    "format-plugged": " {capacity}",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["", "", "", "", ""]
+  }
+}

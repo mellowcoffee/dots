@@ -1,0 +1,42 @@
+[opener]
+edit = [
+  { run = 'nvim "$@"', block = true, desc = "Neovim" },
+]
+web = [
+  { run = 'firefox "$@"', detach = true, desc = "Firefox" },
+]
+pdf = [
+  { run = 'zathura "$@"', orphan = true, desc = "Zathura" },
+  { run = 'firefox "$@"', detach = true, desc = "Firefox" },
+]
+media = [
+  { run = 'mpv "$@"', orphan = true, desc = "MPV" },
+  { run = 'vlc "$@"', detach = true, desc = "VLC" },
+]
+image = [
+    { run = 'imv "$@"', orphan = true, desc = "imv" }
+]
+xdgopen = [
+  { run = 'xdg-open "$1"', desc = "xdg-open" }, 
+]
+[open]
+rules = [
+  # Specific Filetypes
+  { name = "*.html", use = [ "web" ] },
+  { mime = "application/pdf", use = "pdf" },
+  { mime = "application/epub+zip", use = "pdf" },
+
+  # Media
+  { mime = "video/*", use = "media" },
+  { mime = "audio/*", use = "media" },
+  { mime = "image/*", use = "image" },
+
+  # Text / Human Readable 
+  { mime = "text/*", use = "edit" },
+  { mime = "application/json", use = "edit" },
+  { mime = "application/javascript", use = "edit" },
+  { mime = "application/x-shellscript", use = "edit" },
+  
+  # Fallback
+  { name = "*", use = "edit" } 
+]

@@ -1,0 +1,64 @@
+{
+  "ui_font_family": "Lilex Nerd Font",
+  "ui_font_size": 15,
+  "buffer_font_family": "Lilex Nerd Font",
+  "buffer_font_size": 15,
+  "buffer_font_features": {
+    "dlig": true,
+    "liga": true,
+    "calt": true,
+    "ss01": 1,
+    "cv08": 1,
+    "cv11": 1
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Melange Dark",
+    "dark": "One Dark"
+  },
+  // Whether to show full labels in line indicator or short ones
+  //   - `short`: "2 s, 15 l, 32 c"
+  //   - `long`: "2 selections, 15 lines, 32 characters"
+  "line_indicator_format": "short",
+
+  // Individual status bar icons can be hidden:
+  "global_lsp_settings": {
+    "button": false
+  },
+  "project_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "git_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "agent": { "button": false },
+  "debugger": { "button": false },
+  "diagnostics": { "button": false },
+  "search": { "button": false },
+  "vim_mode": true,
+  "cursor_blink": false,
+  "relative_line_numbers": true,
+  "scrollbar": {
+    "show": "never"
+  },
+  "gutter": {
+    "line_numbers": true,
+    "runnables": false,
+    "breakpoints": false,
+    "folds": false,
+    "min_line_number_digits": 0
+  },
+  "inline_code_actions": false,
+  "vertical_scroll_margin": 0,
+  "tab_bar": {
+    "show": false
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  }
+}

@@ -1,0 +1,75 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {},
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {},
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "shift-k": "editor::Hover",
+      "space f f": "file_finder::Toggle",
+      "space f p": "command_palette::Toggle",
+      "space f b": "tab_switcher::Toggle",
+      "space f e": "workspace::ToggleLeftDock",
+      "space /": "workspace::NewSearch",
+      "n": "search::SelectNextMatch",
+      "shift-n": "search::SelectPreviousMatch",
+      "space x": "pane::CloseActiveItem",
+      "space f d": "diagnostics::Deploy",
+      "space f s": "outline::Toggle",
+      "space f r": "editor::FindAllReferences",
+      "space t": "workspace::ToggleBottomDock",
+      "g n": "pane::ActivateNextItem",
+      "g p": "pane::ActivatePreviousItem",
+      "U": "editor::Redo",
+      "ctrl-d": ["editor::MovePageDown", { "center_cursor": true }],
+      "ctrl-u": ["editor::MovePageUp", { "center_cursor": true }],
+      "-": "pane::RevealInProjectPanel",
+      "é": ["workspace::SendKeystrokes", ";"],
+      "É": ["workspace::SendKeystrokes", ","],
+      "ő": ["workspace::SendKeystrokes", "{"],
+      "ú": ["workspace::SendKeystrokes", "}"],
+      "Ő": ["workspace::SendKeystrokes", "["],
+      "Ú": ["workspace::SendKeystrokes", "]"],
+    },
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "ctrl-y": "editor::ConfirmCompletion",
+    },
+  },
+  {
+    "context": "(((Editor && VimControl) && !VimWaiting) && !menu)",
+    "bindings": {
+      "space": null,
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-shift-3": [
+        "zed::IncreaseBufferFontSize",
+        {
+          "persist": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-w": null
+    }
+  }
+]
