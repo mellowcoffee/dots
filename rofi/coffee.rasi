@@ -60,7 +60,7 @@ element {
     spacing:            10px;
     orientation:        horizontal;
     // children:           [ element-icon, element-text ];
-    children:           [ element-text ];
+    // children:           [ element-text ];
 }
 
 element selected {
