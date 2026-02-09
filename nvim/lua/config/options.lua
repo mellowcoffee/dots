@@ -10,7 +10,7 @@ vim.g.python3_host_skip_check = 1
 
 -- Clipboard config
 vim.schedule(function()
-  vim.opt.clipboard:append { 'unnamedplus' }
+  vim.opt.clipboard:append { "unnamedplus" }
 end)
 
 -- Indentation settings
@@ -33,15 +33,16 @@ vim.opt.number = true                         -- Show current line number
 vim.opt.relativenumber = true                 -- Show relative line numbers
 vim.opt.cursorline = true                     -- Highlight current line
 vim.opt.showmatch = true                      -- Show matching brackets
-vim.opt.signcolumn = 'number'                 -- Put error markers in the line number column
+vim.opt.signcolumn = "number"                 -- Put error markers in the line number column
 vim.opt.winborder = "solid"
 
 -- Search & Edit
-vim.opt.backspace = { 'indent', 'eol', 'start' } -- Intuitive backspace behavior
+vim.opt.backspace = { "indent", "eol", "start" } -- Intuitive backspace behavior
 vim.opt.hlsearch = false                         -- Turns off highlighting during search
 vim.opt.ignorecase = true                        -- Requirement for the next line
 vim.opt.smartcase = true                         -- Lowercase searches are case-insensitive, uppercase ones are case-sensitive
 vim.opt.undofile = true
+vim.opt.virtualedit = "block"
 
 -- Optimization & Compatibility
 vim.opt.ttyfast = true
@@ -65,12 +66,12 @@ vim.opt.listchars = {
 --- THEME VARIABLES (PRE-LOAD) ---
 
 -- Gruvbox Material
--- vim.g.gruvbox_material_foreground='original'
--- vim.g.gruvbox_material_foreground='mix'
-vim.g.gruvbox_material_foreground = 'material'
-vim.g.gruvbox_material_background = 'hard'
--- vim.g.gruvbox_material_background='medium'
-vim.g.gruvbox_material_ui_contrast = 'high'
+-- vim.g.gruvbox_material_foreground="original"
+-- vim.g.gruvbox_material_foreground="mix"
+vim.g.gruvbox_material_foreground = "material"
+vim.g.gruvbox_material_background = "hard"
+-- vim.g.gruvbox_material_background="medium"
+vim.g.gruvbox_material_ui_contrast = "high"
 vim.g.gruvbox_material_enable_italic = 1
 vim.g.gruvbox_material_float_style = "blend"
 vim.g.gruvbox_material_statusline_style = "mix"
@@ -78,8 +79,8 @@ vim.g.gruvbox_material_cursor = "auto"
 vim.g.gruvbox_material_visual = "blue background"
 -- vim.g.gruvbox_material_transparent_background = 1
 vim.g.gruvbox_material_enable_bold = 0
-vim.g.gruvbox_material_diagnostic_virtual_text = 'highlighted'
-vim.g.gruvbox_material_statusline_style = 'original'
+vim.g.gruvbox_material_diagnostic_virtual_text = "highlighted"
+vim.g.gruvbox_material_statusline_style = "original"
 vim.g.gruvbox_material_diagnostic_text_highlight = 1
 vim.g.gruvbox_material_diagnostic_line_highlight = 1
 -- vim.g.gruvbox_material_colors_override={ bg0 = {"#11111A", "234"}, bg1 = {"#181825", "234"} }
@@ -105,40 +106,40 @@ vim.g.zenbones = {
 
 function _G.get_mode()
   local modes = {
-    ['n'] = 'NOR',
-    ['no'] = "O-P",
-    ['i'] = 'INS',
-    ['v'] = 'VIS',
-    ['V'] = 'V-L',
-    [''] = 'V-B',
-    ['c'] = 'CMD',
-    ['r'] = 'REP',
-    ['R'] = 'REP',
-    ['t'] = 'TER'
+    ["n"] = "NOR",
+    ["no"] = "O-P",
+    ["i"] = "INS",
+    ["v"] = "VIS",
+    ["V"] = "V-L",
+    [""] = "V-B",
+    ["c"] = "CMD",
+    ["r"] = "REP",
+    ["R"] = "REP",
+    ["t"] = "TER"
   }
   return modes[vim.fn.mode()] or vim.fn.mode()
 end
 
 function _G.get_mode_short()
   local modes = {
-    ['n'] = 'n',
-    ['no'] = "o",
-    ['i'] = 'i',
-    ['v'] = 'v',
-    ['V'] = 'v',
-    [''] = 'v',
-    ['c'] = 'c',
-    ['r'] = 'r',
-    ['R'] = 'r',
-    ['t'] = 't'
+    ["n"] = "n",
+    ["no"] = "o",
+    ["i"] = "i",
+    ["v"] = "v",
+    ["V"] = "v",
+    [""] = "v",
+    ["c"] = "c",
+    ["r"] = "r",
+    ["R"] = "r",
+    ["t"] = "t"
   }
   return modes[vim.fn.mode()] or vim.fn.mode()
 end
 
--- vim.opt.statusline = ' %f %m %=%y %l:%c %P '
-vim.opt.statusline = ' %{v:lua.get_mode()}  %f %m %=%y %l:%c %P '
--- vim.opt.statusline = ' %{v:lua.get_mode()} │ %f %m %=%y │ %l:%c '
--- vim.opt.statusline = ' %{v:lua.get_mode_short()} | %f %m %=%y %l:%c %P '
+-- vim.opt.statusline = " %f %m %=%y %l:%c %P "
+vim.opt.statusline = " %{v:lua.get_mode()}  %f %m %=%y %l:%c %P "
+-- vim.opt.statusline = " %{v:lua.get_mode()} │ %f %m %=%y │ %l:%c "
+-- vim.opt.statusline = " %{v:lua.get_mode_short()} | %f %m %=%y %l:%c %P "
 
 --- ACTIVE COLORSCHEME ---
 

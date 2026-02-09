@@ -8,3 +8,9 @@ function y() {
   [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
   rm -f -- "$tmp"
 }
+
+### UTILITY ###
+function mcd() {
+    mkdir -p $1;
+    cd $1
+}

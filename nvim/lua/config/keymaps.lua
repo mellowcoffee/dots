@@ -53,6 +53,7 @@ local function toggle_transparency()
     for _, group in ipairs(groups) do
       vim.api.nvim_set_hl(0, group, { bg = "none", ctermbg = "none" })
     end
+    vim.api.nvim_set_hl(0, "CursorLine", { bg = "#2a2a2a", blend = 21 })
   end
 end
 
