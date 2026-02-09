@@ -1,0 +1,25 @@
+### COLORS ###
+set default-bg "rgba(0, 0, 0, 0)"
+set recolor-lightcolor "rgba(0, 0, 0, 0)"
+set recolor-darkcolor "rgba(255, 255, 255, 1)"
+set render-loading-bg "rgba(0, 0, 0, 0)"
+
+set statusbar-bg "#282828"
+set statusbar-fg "#8ec07c"
+
+set completion-bg "#282828"
+set completion-fg "#8ec07c"
+set completion-highlight-bg "#add8e6"
+
+set inputbar-bg "#282828"
+set inputbar-fg "#8ec07c"
+
+set recolor-keephue
+set recolor true
+
+### OPTIONS ###
+set window-title-basename true
+set guioptions none
+
+set render-loading true
+set page-cache-size 15
