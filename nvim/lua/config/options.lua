@@ -143,5 +143,5 @@ vim.opt.statusline = ' %{v:lua.get_mode()}  %f %m %=%y %l:%c %P '
 --- ACTIVE COLORSCHEME ---
 
 vim.schedule(function()
-  vim.cmd("colorscheme kanso-mist")
+  vim.cmd("colorscheme gruvbox-material")
 end)
