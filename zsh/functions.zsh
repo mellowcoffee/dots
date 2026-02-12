@@ -25,19 +25,19 @@ function pack() {
     local packages=$(pacman -Slq | package_picker)
     [[ -z "$packages" ]] && return
     echo "Packages: $(echo "$packages" | sed ':a;N;$!ba;s/\n/, /g')"
-    sudo pacman -S $packages
+    echo "$packages" | xargs -ro sudo pacman -S
 }
 
 function aur() {
     local packages=$(paru -Slq | package_picker)
     [[ -z "$packages" ]] && return
     echo "Packages: $(echo "$packages" | sed ':a;N;$!ba;s/\n/, /g')"
-    paru -S $packages
+    echo "$packages" | xargs -ro paru -S
 }
 
 function dpack() {
     local packages=$(pacman -Qeq | package_picker)
     [[ -z "$packages" ]] && return
     echo "Removing packages: $(echo "$packages" | sed ':a;N;$!ba;s/\n/, /g')"
-    sudo pacman -Rs $packages
+    echo "$packages" | xargs -ro sudo pacman -Rs
 }
