@@ -22,11 +22,30 @@ return {
       -- Setup capabilities from blink.cmp
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
-      -- Manual LSP Configurations from init.lua
       vim.lsp.config['clangd'] = {
-        init_options = {
-          fallbackFlags = { '--std=c23' }
+        cmd = {
+            "clangd",
+            "--background-index",
+            "--clang-tidy",
+            "--header-insertion=iwyu",
+            "--completion-style=detailed",
+            "--function-arg-placeholders",
+            "--fallback-style=llvm"
         },
+        init_options = {
+            usePlaceholders = true,
+            completeUnimported = true,
+            clangdFileStatus = true,
+        },
+      }
+      vim.lsp.config["lua_ls"] = {
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim" }
+            }
+          }
+        }
       }
 
       -- Enable servers
@@ -41,6 +60,7 @@ return {
       vim.lsp.enable('ocamllsp')
       vim.lsp.enable('clangd')
       vim.lsp.enable('zls')
+      vim.lsp.enable('lua_ls')
 
       -- Global Coq path
       vim.g.coqtail_coq_path = "/usr/bin"

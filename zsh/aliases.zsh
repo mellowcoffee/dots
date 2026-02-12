@@ -1,4 +1,5 @@
 ### ALIASES ###
+alias man="batman"
 alias mdv="~/scripts/preview_markdown.sh"
 alias tp="trash-put"
 alias ls='ls --color=auto'
