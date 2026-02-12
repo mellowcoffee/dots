@@ -22,7 +22,7 @@ return {
       -- Setup capabilities from blink.cmp
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
-      vim.lsp.config['clangd'] = {
+      vim.lsp.config["clangd"] = {
         cmd = {
             "clangd",
             "--background-index",
@@ -47,6 +47,11 @@ return {
           }
         }
       }
+      vim.lsp.config["bashls"] = {
+        settings = {
+          filetypes = { "sh", "zsh" }
+        }
+      }
 
       -- Enable servers
       vim.lsp.enable('hls')
@@ -61,6 +66,7 @@ return {
       vim.lsp.enable('clangd')
       vim.lsp.enable('zls')
       vim.lsp.enable('lua_ls')
+      vim.lsp.enable('bashls')
 
       -- Global Coq path
       vim.g.coqtail_coq_path = "/usr/bin"
