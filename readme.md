@@ -1,6 +1,6 @@
 ### 🧿 dots
 
-<img width=60% align=right src="./screenshots/screenshot_1.png">
+<img width=60% align=right src="./assets/screenshot_1.png">
 
 dotfiles for my daily driver. i run arch with hyprland as my wm.
 config currently includes:
@@ -15,7 +15,7 @@ config currently includes:
 
 #### Gallery
 
-<img width=50% src="./screenshots/screenshot_6.png"><img width=50% src="./screenshots/screenshot_5.png">
+<img width=50% src="./assets/screenshot_6.png"><img width=50% src="./assets/screenshot_5.png">
 
 #### Notes
 

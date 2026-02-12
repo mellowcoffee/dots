@@ -67,8 +67,8 @@ vim.opt.listchars = {
 
 -- Gruvbox Material
 -- vim.g.gruvbox_material_foreground="original"
--- vim.g.gruvbox_material_foreground="mix"
-vim.g.gruvbox_material_foreground = "material"
+vim.g.gruvbox_material_foreground="mix"
+-- vim.g.gruvbox_material_foreground = "material"
 vim.g.gruvbox_material_background = "hard"
 -- vim.g.gruvbox_material_background="medium"
 vim.g.gruvbox_material_ui_contrast = "high"
@@ -84,7 +84,7 @@ vim.g.gruvbox_material_statusline_style = "original"
 vim.g.gruvbox_material_diagnostic_text_highlight = 1
 vim.g.gruvbox_material_diagnostic_line_highlight = 1
 -- vim.g.gruvbox_material_colors_override={ bg0 = {"#11111A", "234"}, bg1 = {"#181825", "234"} }
--- vim.g.gruvbox_material_colors_override={ bg0 = {"#181a1b", "234"} }
+vim.g.gruvbox_material_colors_override={ bg0 = {"#181a1b", "234"} }
 -- vim.g.gruvbox_material_colors_override={ bg0 = {"#101114", "234"} }
 -- vim.g.gruvbox_material_colors_override={ bg0 = {"#151515", "234"} }
 
