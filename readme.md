@@ -13,10 +13,24 @@ config currently includes:
 
 <span width=100%>&nbsp;</span>
 
-#### Gallery
+#### gallery
 
 <img width=50% src="./assets/screenshot_6.png"><img width=50% src="./assets/screenshot_5.png">
 
-#### Notes
+#### installation
+
+```bash
+git clone https://github.com/mellowcoffee/dots.git
+cd dots
+```
+
+a script is provided to install the configs. any existing config is backed up, and the present dotfiles are symlinked.
+
+```bash
+./install.sh nvim dunst fastfetch # install individual configs by directory name
+./install.sh -a # install all configs
+```
+
+#### notes
 
 this config uses a number of shell scripts, which may be found [🐚 here](https://github.com/mellowcoffee/scripts)
