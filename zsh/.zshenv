@@ -7,6 +7,7 @@ export VISUAL=nvim
 ### PATH ###
 typeset -U path
 path=(
+    "$HOME/scripts"
     "$HOME/.cargo/bin"
     "$HOME/.ghcup/bin"
     "$HOME/.config/emacs/bin"
