@@ -3,6 +3,7 @@ export ZDOTDIR=$HOME/.config/zsh # you need to symlink this file from ~/.zshenv
 ### ENVIRONMENT ###
 export EDITOR=nvim
 export VISUAL=nvim
+export TERMINAL=foot
 
 ### PATH ###
 typeset -U path

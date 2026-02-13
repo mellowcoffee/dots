@@ -111,8 +111,11 @@ return {
     lazy = false,
     dependencies = { { "nvim-mini/mini.icons", opts = {} } },
     opts = {
+      default_file_explorer = true,
+      skip_confirm_for_simple_edits = true,
       constrain_cursor = "name",
       delete_to_trash = true,
+      watch_for_changes = true,
       columns = {
         "permissions",
         "size",
@@ -127,7 +130,7 @@ return {
       },
       view_options = {
         show_hidden = true
-      }
+      },
     },
   },
 

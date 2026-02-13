@@ -66,7 +66,8 @@ return {
       vim.lsp.enable('clangd')
       vim.lsp.enable('zls')
       vim.lsp.enable('lua_ls')
-      vim.lsp.enable('bashls')
+      -- vim.lsp.enable('bashls')
+      vim.lsp.enable('marksman')
 
       -- Global Coq path
       vim.g.coqtail_coq_path = "/usr/bin"
@@ -242,4 +243,25 @@ return {
     ---@type render.md.UserConfig
     opts = {},
   }
+  -- {
+  --   "OXY2DEV/markview.nvim",
+  --   lazy = false,
+  --   dependencies = { "saghen/blink.cmp" },
+  --   opts = {
+  --     asciidoc = {
+  --       enable = true
+  --     },
+  --     latex = {
+  --       enable = true,
+  --       texts = {
+  --         enable = true,
+  --       },
+  --       symbols = {
+  --         enable = true,
+  --
+  --         hl = "MarkviewComment"
+  --       },
+  --     }
+  --   }
+  -- },
 }

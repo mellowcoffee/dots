@@ -15,8 +15,8 @@ end)
 
 -- Indentation settings
 vim.opt.autoindent = true
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true -- Use spaces for tabs
 vim.opt.wrap = false
@@ -35,6 +35,7 @@ vim.opt.cursorline = true                     -- Highlight current line
 vim.opt.showmatch = true                      -- Show matching brackets
 vim.opt.signcolumn = "number"                 -- Put error markers in the line number column
 vim.opt.winborder = "solid"
+vim.opt.conceallevel = 2
 
 -- Search & Edit
 vim.opt.backspace = { "indent", "eol", "start" } -- Intuitive backspace behavior

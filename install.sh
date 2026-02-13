@@ -70,6 +70,7 @@ install_all() {
     log_info "Installing all dotfiles from $dots_dir..."
     for d in "$dots_dir"/*/; do
         [[ -d "$d" ]] || continue
+        [[ "$d" != "$dots_dir/assets/" ]] || continue
         link_config "$(resolve_path "$d")"
     done
 }
