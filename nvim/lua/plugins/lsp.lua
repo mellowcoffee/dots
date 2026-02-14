@@ -47,16 +47,11 @@ return {
           }
         }
       }
-      vim.lsp.config["bashls"] = {
-        settings = {
-          filetypes = { "sh", "zsh" }
-        }
-      }
 
       -- Enable servers
       vim.lsp.enable('hls')
       vim.lsp.enable('rust_analyzer')
-      vim.lsp.enable('texlab')
+      -- vim.lsp.enable('texlab')
       vim.lsp.enable('emmet_ls')
       vim.lsp.enable('marksman')
       vim.lsp.enable('gleam')
@@ -66,7 +61,6 @@ return {
       vim.lsp.enable('clangd')
       vim.lsp.enable('zls')
       vim.lsp.enable('lua_ls')
-      -- vim.lsp.enable('bashls')
       vim.lsp.enable('marksman')
 
       -- Global Coq path
@@ -120,14 +114,30 @@ return {
     ft = "tex",
     init = function()
       vim.g.vimtex_view_method = "zathura"
+      vim.g.vimtex_compiler_method = 'latexmk'
+      vim.g.vimtex_compiler_latexmk = {
+        build_dir = 'build',
+        callback = 1,
+        continuous = 1,
+        executable = 'latexmk',
+        hooks = {},
+        options = {
+          '-verbose',
+          '-file-line-error',
+          '-synctex=1',
+          '-interaction=nonstopmode',
+          '-shell-escape',
+        },
+      }
     end
   },
 
-  -- Blink.cmp
+  -- Completion
   {
     'saghen/blink.cmp',
     version = '1.4.1',
     event = 'InsertEnter',
+    dependencies = { 'L3MON4D3/LuaSnip', version = 'v2.*' },
     opts = {
       keymap = { preset = 'default' },
       appearance = {
@@ -149,7 +159,7 @@ return {
         },
       },
       sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        default = { 'snippets', 'lsp', 'path', 'buffer' },
         per_filetype = {
           org = { 'orgmode' }
         },
@@ -161,9 +171,23 @@ return {
           },
         },
       },
+      snippets = {
+        preset = 'luasnip',
+      },
       fuzzy = { implementation = "prefer_rust_with_warning" }
     },
     opts_extend = { "sources.default" }
+  },
+
+  -- Snippet engine
+  {
+    "L3MON4D3/LuaSnip",
+    version = "v2.*",
+    config = function()
+      require('luasnip.loaders.from_lua').load({
+        paths = { vim.fn.stdpath("config") .. "/lua/snippets" }
+      })
+    end,
   },
 
   -- Tree-sitter

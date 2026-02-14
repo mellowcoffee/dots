@@ -18,8 +18,11 @@ set recolor-keephue
 set recolor true
 
 ### OPTIONS ###
+set statusbar-home-tilde true
 set window-title-basename true
 set guioptions none
+set synctex true
+set selection-clipboard clipboard
 
 set render-loading true
 set page-cache-size 15
