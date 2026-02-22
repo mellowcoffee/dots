@@ -1,4 +1,7 @@
 ### KEYBINDINGS ###
+bindkey -v
+bindkey "^?" backward-delete-char
+bindkey "^H" backward-delete-char
 bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
 bindkey "^u" kill-line

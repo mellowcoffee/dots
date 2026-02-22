@@ -35,7 +35,6 @@ vim.opt.cursorline = true                     -- Highlight current line
 vim.opt.showmatch = true                      -- Show matching brackets
 vim.opt.signcolumn = "number"                 -- Put error markers in the line number column
 vim.opt.winborder = "solid"
-vim.opt.conceallevel = 2
 
 -- Search & Edit
 vim.opt.backspace = { "indent", "eol", "start" } -- Intuitive backspace behavior
