@@ -63,6 +63,7 @@ return {
       vim.lsp.enable('zls')
       vim.lsp.enable('lua_ls')
       vim.lsp.enable('marksman')
+      vim.lsp.enable('tinymist')
 
       -- Global Coq path
       vim.g.coqtail_coq_path = "/usr/bin"
@@ -267,6 +268,15 @@ return {
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {},
+  },
+
+  -- Typst preview
+  {
+    'chomosuke/typst-preview.nvim',
+    -- lazy = false, -- or ft = 'typst'
+    ft = 'typst',
+    version = '1.*',
+    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
   }
   -- {
   --   "OXY2DEV/markview.nvim",

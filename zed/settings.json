@@ -2,29 +2,29 @@
   // -- FONTS & THEME --
   "ui_font_family": ".ZedSans",
   "ui_font_size": 15,
-  "buffer_font_size": 15,
-  "buffer_font_family": "Lilex",
+  "buffer_font_size": 17,
+  "buffer_font_family": "Iosevka",
   // Caskaydia
   // "buffer_font_features": {
   //   "ss01": 1,
   // },
   // Lilex
-  "buffer_font_features": {
-    "dlig": true,
-    "liga": true,
-    "calt": true,
-    "ss01": 1,
-    "ss02": 1,
-    "cv08": 1,
-    "cv11": 1,
-  },
-  // Iosevka
   // "buffer_font_features": {
   //   "dlig": true,
-  //   "ss14": true,
+  //   "liga": true,
+  //   "calt": true,
+  //   "ss01": 1,
+  //   "ss02": 1,
+  //   "cv08": 1,
+  //   "cv11": 1,
   // },
+  // Iosevka
+  "buffer_font_features": {
+    "dlig": true,
+    "ss15": true,
+  },
 
-  "theme": "Kanso Ink (Blurred)",
+  "theme": "Jellybeans",
 
   // -- EDITOR & VIM --
   "vim_mode": true,
