@@ -35,7 +35,6 @@
   "nvim-lspconfig": { "branch": "master", "commit": "21db1fd40cbcbf1524ae154ab8f394fdf085749a" },
   "nvim-treesitter": { "branch": "main", "commit": "4916d6592ede8c07973490d9322f187e07dfefac" },
   "oil.nvim": { "branch": "master", "commit": "0fcc83805ad11cf714a949c98c605ed717e0b83e" },
-  "render-markdown.nvim": { "branch": "main", "commit": "d67113f11384c0dad96fced2f7b91f1fc811e97f" },
   "snacks.nvim": { "branch": "main", "commit": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e" },
   "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "147af4e49f51dd48f41972de26552872b8ba7b25" },
   "tokyonight.nvim": { "branch": "main", "commit": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6" },
