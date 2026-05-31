@@ -1,7 +1,7 @@
 -- Colorscheme variables (must be set before :colorscheme)
 
 -- Gruvbox Material
-vim.g.gruvbox_material_foreground = "mix"
+vim.g.gruvbox_material_foreground = "material"
 vim.g.gruvbox_material_background = "hard"
 vim.g.gruvbox_material_ui_contrast = "high"
 vim.g.gruvbox_material_enable_italic = 1
@@ -13,7 +13,7 @@ vim.g.gruvbox_material_visual = "blue background"
 vim.g.gruvbox_material_diagnostic_virtual_text = "highlighted"
 vim.g.gruvbox_material_diagnostic_text_highlight = 1
 vim.g.gruvbox_material_diagnostic_line_highlight = 1
-vim.g.gruvbox_material_colors_override = { bg0 = { "#181a1b", "234" } }
+-- vim.g.gruvbox_material_colors_override = { bg0 = { "#181a1b", "234" } }
 
 -- Ayu
 vim.g.ayucolor = "mirage"

@@ -1,6 +1,6 @@
 -- Leader
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.maplocalleader = "\\"
 
 -- Skip Python provider checks
 vim.g.python_host_skip_check = 1

@@ -3,7 +3,8 @@ return {
     "R-nvim/R.nvim",
     lazy = false,
     opts = {
-      R_app = "radian",
+      -- R_app = "radian",
+      R_app = "R",
       R_cmd = "R",
       R_args = {},
       hook = {

@@ -24,7 +24,7 @@
     "ss15": true,
   },
 
-  "theme": "Jellybeans",
+  "theme": "Kanso Mist (Blurred)",
 
   // -- EDITOR & VIM --
   "vim_mode": true,
@@ -90,12 +90,17 @@
   "global_lsp_settings": {
     "button": false,
   },
-  "project_panel": { "button": false },
-  "outline_panel": { "button": false },
-  "collaboration_panel": { "button": false },
-  "git_panel": { "button": true },
+  "project_panel": { "dock": "left",
+                     "button": false },
+  "outline_panel": { "dock": "left",
+                     "button": false },
+  "collaboration_panel": { "dock": "left",
+                           "button": false },
+  "git_panel": { "dock": "left",
+                 "button": true },
   "notification_panel": { "button": false },
-  "agent": { "button": false },
+  "agent": { "dock": "right",
+             "button": false },
   "debugger": { "button": false },
   "diagnostics": { "button": false },
   "search": { "button": false },

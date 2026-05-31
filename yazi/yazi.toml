@@ -22,7 +22,7 @@ xdgopen = [
 [open]
 rules = [
   # Specific Filetypes
-  { name = "*.html", use = [ "web" ] },
+  { url  = "*.html", use = [ "web" ] },
   { mime = "application/pdf", use = "pdf" },
   { mime = "application/epub+zip", use = "pdf" },
 
@@ -38,7 +38,7 @@ rules = [
   { mime = "application/x-shellscript", use = "edit" },
   
   # Fallback
-  { name = "*", use = "edit" } 
+  { mime = "*", use = "edit" } 
 ]
 [mgr]
 linemode = "size"
