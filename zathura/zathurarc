@@ -26,5 +26,7 @@ set guioptions none
 set synctex true
 set selection-clipboard clipboard
 
+set scroll-step 10
+
 set render-loading true
 set page-cache-size 15

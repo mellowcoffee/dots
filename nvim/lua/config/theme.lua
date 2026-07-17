@@ -28,7 +28,7 @@ vim.g.zenbones = { darkness = "default" }
 
 -- Active colorscheme
 vim.schedule(function()
-  vim.cmd("colorscheme melange")
+  vim.cmd("colorscheme gruvbox-material")
 end)
 
 -- Transparency toggle

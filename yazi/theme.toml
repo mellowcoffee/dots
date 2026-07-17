@@ -1,2 +1,11 @@
 [flavor]
 dark = "gruvbox-dark"
+[icon]
+append_dirs = [
+    { name = "downloads", text = "󰉍", fg = "#03a9f4" },
+    { name = "documents", text = "󱧶", fg = "#03a9f4" },
+    { name = "images", text = "󰉏", fg = "#03a9f4" },
+    { name = "music", text = "󱍙", fg = "#03a9f4" },
+    { name = "public", text = "󱞊", fg = "#03a9f4" },
+    { name = "videos", text = "󱧺", fg = "#03a9f4" },
+]

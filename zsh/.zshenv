@@ -5,6 +5,8 @@ export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL=foot
 
+export R_LIBS_USER=${XDG_DATA_HOME}/R/library/%v
+
 ### PATH ###
 typeset -U path
 path=(
