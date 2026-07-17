@@ -10,6 +10,10 @@ function y() {
 }
 
 ### UTILITY ###
+function pushall() {
+    git remote | xargs -I R git push R
+}
+
 function mcd() {
     mkdir -p $1;
     cd $1
@@ -26,13 +30,6 @@ function pack() {
     [[ -z "$packages" ]] && return
     echo "Packages: $(echo "$packages" | sed ':a;N;$!ba;s/\n/, /g')"
     echo "$packages" | xargs -ro sudo pacman -S
-}
-
-function aur() {
-    local packages=$(paru -Slq | package_picker)
-    [[ -z "$packages" ]] && return
-    echo "Packages: $(echo "$packages" | sed ':a;N;$!ba;s/\n/, /g')"
-    echo "$packages" | xargs -ro paru -S
 }
 
 function dpack() {

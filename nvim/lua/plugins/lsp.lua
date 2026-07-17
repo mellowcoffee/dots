@@ -1,5 +1,10 @@
 -- Server-specific configuration overrides
 local server_configs = {
+  rust_analyzer = {
+    check = {
+      command = "clippy",
+    },
+  },
   clangd = {
     cmd = {
       "clangd",

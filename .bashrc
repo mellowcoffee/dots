@@ -20,9 +20,18 @@ set -o noclobber
 # prompt
 # if [[ -n ${SSH_CONNECTION} ]]; then hc='1;33'; else hc='1;32'; fi
 # PS1='\[\e[2;37m\]\A \[\e[0m\]\[\e['"$hc"'m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] \$ '
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
 # PS1='[\t \W]\$ '
-PS2='> '
+# PS2='> '
+
+prompt() {
+    local d=${PWD/#$HOME/'~'}
+    local IFS=/ n
+    read -ra n <<< "$d"
+    (( ${#n[@]} > 3 )) && d="${n[-3]}/${n[-2]}/${n[-1]}"
+    PS1="[\u@\h ${d}]$ "
+}
+PROMPT_COMMAND=prompt
 
 # colors
 export CLICOLOR=1
