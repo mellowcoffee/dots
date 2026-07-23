@@ -3,6 +3,10 @@ alias lsa="ls -o \
 --almost-all \
 --group-directories-first \
 --human-readable"
+alias ll="ls -o \
+--almost-all \
+--group-directories-first \
+--human-readable"
 alias man="batman"
 alias tp="trash-put"
 alias ls='ls --color=auto'

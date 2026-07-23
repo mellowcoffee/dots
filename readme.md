@@ -2,8 +2,8 @@
 
 <img src="./assets/screenshot_1.png">
 
-dotfiles for my daily driver. i run arch with hyprland as my wm.
-config currently includes:
+dotfiles for my daily driver. i run arch with hyprland as my wm. config
+currently includes:
 - hyprland (wm)
 - foot (terminal)
 - zsh (shell)
@@ -25,18 +25,20 @@ git clone https://github.com/mellowcoffee/dots.git
 cd dots
 ```
 
-a script is provided to install the configs. any existing config is backed up, and the present dotfiles are symlinked.
+a script is provided to install the configurations. any existing config is
+backed up, and the present dotfiles are symlinked.
 
 ```bash
-./install.sh nvim dunst fastfetch # install individual configs by directory name
-./install.sh -a # install all configs
+./install.sh nvim dunst fastfetch # install individual configurations by directory name
+./install.sh -a # install all configurations
+./install.sh -f .vimrc .bashrc # install standalone config files into $HOME
 ```
 
-config files that aren't provided in a directory, such as `.vimrc` and `.bashrc` may be linked to manually.
+zsh has to know about ~/.config/zsh, which is achieved by linking to
+zsh/.zshenv from ~/.zshenv. this can be performed via the following command:
 
 ```bash
-ln -s ./.vimrc ~/.vimrc
-ln -s ./.bashrc ~/.bashrc
+./install.sh -l zsh/.zshenv $HOME/.zshenv
 ```
 
 ### notes

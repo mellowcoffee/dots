@@ -5,6 +5,14 @@ local server_configs = {
       command = "clippy",
     },
   },
+  hls = {
+    filetypes = { 'haskell', 'lhaskell', 'cabal' },
+    settings = {
+      haskell = {
+        formattingProvider = 'fourmolu',
+      },
+    },
+  },
   clangd = {
     cmd = {
       "clangd",
@@ -30,18 +38,19 @@ local server_configs = {
 
 -- Servers enabled at startup
 local enabled_servers = {
-  "hls",
-  "rust_analyzer",
-  "emmet_ls",
-  "marksman",
-  "gleam",
-  "ty",
-  "julials",
-  "ocamllsp",
+  "bashls",
   "clangd",
-  "zls",
+  "emmet_ls",
+  "gleam",
+  "hls",
+  "julials",
   "lua_ls",
+  "marksman",
+  "ocamllsp",
+  "rust_analyzer",
   "tinymist",
+  "ty",
+  "zls",
 }
 
 -- LspAttach buffer-local keymaps
