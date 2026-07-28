@@ -7,6 +7,8 @@ export TERMINAL=foot
 
 export R_LIBS_USER=${XDG_DATA_HOME}/R/library/%v
 
+export CLICOLOR=1
+
 ### PATH ###
 typeset -U path
 path=(
