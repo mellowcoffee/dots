@@ -17,6 +17,7 @@ currently includes:
 ### gallery
 
 <img width=50% src="./assets/screenshot_6.png"><img width=50% src="./assets/screenshot_5.png">
+<img width=50% src="./assets/screenshot_2.png"><img width=50% src="./assets/screenshot_4.png">
 
 ### installation
 
