@@ -31,3 +31,16 @@ autocmd("ColorScheme", {
     ]])
   end,
 })
+
+-- Recolor number column
+autocmd("ColorScheme", {
+  callback = function()
+    local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
+    local bg = normal.bg
+    for _, group in ipairs({ "LineNr", "LineNrAbove", "LineNrBelow", "SignColumn", "CursorLineNr", "FoldColumn" }) do
+      local hl = vim.api.nvim_get_hl(0, { name = group })
+      hl.bg = bg
+      vim.api.nvim_set_hl(0, group, hl)
+    end
+  end,
+})

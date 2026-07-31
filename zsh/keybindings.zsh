@@ -7,7 +7,7 @@ bindkey -v
 bindkey "^?" backward-delete-char
 bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
-bindkey "^u" kill-line
+bindkey "^u" kill-whole-line
 bindkey "^h" backward-word
 bindkey "^b" backward-word
 bindkey "^[[1;5D" backward-word

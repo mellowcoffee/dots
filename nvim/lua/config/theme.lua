@@ -26,9 +26,19 @@ vim.g.everforest_colors_override = { bg0 = { "#21272b", "234" } }
 -- Zenbones
 vim.g.zenbones = { darkness = "default" }
 
+-- Sonokai
+vim.g.sonokai_style = "espresso"
+vim.g.sonokai_enable_italic = 1
+
+-- Cendre
+require("cendre").setup {
+    background = "hard",
+    italic = true
+}
+
 -- Active colorscheme
 vim.schedule(function()
-  vim.cmd("colorscheme gruvbox-material")
+  vim.cmd("colorscheme cendre")
 end)
 
 -- Transparency toggle

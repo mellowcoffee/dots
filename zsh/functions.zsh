@@ -10,10 +10,6 @@ function y() {
 }
 
 ### UTILITY ###
-function pushall() {
-    git remote | xargs -I R git push R
-}
-
 function mcd() {
     mkdir -p $1;
     cd $1
