@@ -1,3 +1,4 @@
+-- Plugins for navigating a buffer or the filesystem
 return {
   -- Label-based motion
   {
@@ -8,23 +9,6 @@ return {
     },
     keys = {
       { "<leader>s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-    },
-  },
-
-  -- Keybinding hints
-  {
-    "folke/which-key.nvim",
-    event = "VimEnter",
-    opts = {
-      preset = "helix",
-      win = { border = "single" },
-    },
-    keys = {
-      {
-        "<leader>?",
-        function() require("which-key").show({ global = false }) end,
-        desc = "Buffer Local Keymaps (which-key)",
-      },
     },
   },
 

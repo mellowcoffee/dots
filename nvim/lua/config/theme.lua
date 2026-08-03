@@ -56,3 +56,14 @@ local function toggle_transparency()
 end
 
 vim.keymap.set("n", "<leader>gt", toggle_transparency, { desc = "Toggle transparent background" })
+
+local function toggle_background()
+    local is_dark = vim.o.background == "dark"
+    if is_dark then
+        vim.cmd("se bg=light")
+    else
+        vim.cmd("se bg=dark")
+    end
+end
+
+vim.keymap.set("n", "<leader>gb", toggle_background, { desc = "Toggle dark/light mode" })

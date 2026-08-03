@@ -1,3 +1,5 @@
+-- Pickers
+
 local function pick(name, args)
   return function() require("snacks").picker[name](args) end
 end

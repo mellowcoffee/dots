@@ -1,0 +1,28 @@
+config-file = font.conf
+
+font-thicken = true
+freetype-load-flags = hinting,autohint
+
+background-opacity = 0.0
+background-blur = true
+
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = true
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+app-notifications = no-clipboard-copy,no-config-reload
+
+keybind = clear
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+shift+3=increase_font_size:0.5
+keybind = ctrl+-=decrease_font_size:0.5
+keybind = ctrl+0=reset_font_size
+keybind = ctrl+shift+,=reload_config
+
+background = 282828
+foreground = ebdbb2

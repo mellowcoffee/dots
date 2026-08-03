@@ -25,8 +25,8 @@ map("n", "<C-j>", ":cnext<CR>", { desc = "Next quickfix" })
 map("n", "<C-k>", ":cprev<CR>", { desc = "Previous quickfix" })
 
 -- Hungarian layout remaps
-map("n", "é", ";")
-map("n", "É", ",")
+map("n", "é", ":")
+map("n", "É", ";")
 map("n", "ő", "{")
 map("n", "ú", "}")
 map("n", "Ő", "[")

@@ -12,7 +12,7 @@ export CLICOLOR=1
 ### PATH ###
 typeset -U path
 path=(
-    "$HOME/scripts"
+    "$HOME/scripts/utils"
     "$HOME/.cargo/bin"
     "$HOME/.ghcup/bin"
     "$HOME/.config/emacs/bin"

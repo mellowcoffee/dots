@@ -1,3 +1,4 @@
+-- mini.nvim
 return {
   {
     "echasnovski/mini.nvim",

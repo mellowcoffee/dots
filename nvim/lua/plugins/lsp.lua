@@ -1,9 +1,13 @@
+-- Language servers
 -- Server-specific configuration overrides
 local server_configs = {
   rust_analyzer = {
     check = {
       command = "clippy",
     },
+    ['rust-analyzer'] = {
+      cfg = {},
+    }
   },
   hls = {
     filetypes = { 'haskell', 'lhaskell', 'cabal' },
@@ -70,9 +74,9 @@ local function emmet_attach()
     cmd = { "emmet-language-server", "--stdio" },
     root_dir = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1]),
     init_options = {
-      includeLanguages = {},
       excludeLanguages = {},
       extensionsPath = {},
+      includeLanguages = {},
       preferences = {},
       showAbbreviationSuggestions = true,
       showExpandedAbbreviation = "always",
