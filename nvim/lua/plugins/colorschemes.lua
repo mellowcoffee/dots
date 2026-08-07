@@ -55,4 +55,9 @@ return {
     dependencies = "rktjmp/lush.nvim",
     priority = 1000,
   },
+  {
+    dir = "~/dev/lua/ferra.nvim",
+    lazy = false,
+    priority = 1000,
+  }
 }

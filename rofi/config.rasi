@@ -1,5 +1,5 @@
 configuration {
-    modes: "window,drun,run";
+    modes: "window,drun,run,emoji";
     show-icons: false;
     drun {
         show-icons: true;

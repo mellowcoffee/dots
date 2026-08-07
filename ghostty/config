@@ -3,6 +3,8 @@ config-file = font.conf
 font-thicken = true
 freetype-load-flags = hinting,autohint
 
+theme = Gruvbox Material Dark
+
 background-opacity = 0.0
 background-blur = true
 
@@ -15,6 +17,7 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 
 app-notifications = no-clipboard-copy,no-config-reload
+resize-overlay = never
 
 keybind = clear
 keybind = ctrl+shift+c=copy_to_clipboard

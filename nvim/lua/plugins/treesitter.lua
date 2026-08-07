@@ -1,6 +1,6 @@
 -- Tree-sitter
 
-local parsers = { "haskell", "rust", "elixir", "ocaml", "python", "lua", "c", "gleam" }
+local parsers = { "haskell", "rust", "elixir", "ocaml", "python", "lua", "c", "gleam", "hare" }
 
 return {
   {

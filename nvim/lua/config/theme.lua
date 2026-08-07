@@ -33,12 +33,12 @@ vim.g.sonokai_enable_italic = 1
 -- Cendre
 require("cendre").setup {
     background = "hard",
-    italic = true
+    italic_virtual_text = true
 }
 
 -- Active colorscheme
 vim.schedule(function()
-  vim.cmd("colorscheme cendre")
+  vim.cmd("colorscheme kanso")
 end)
 
 -- Transparency toggle
